@@ -1,0 +1,24 @@
+This is LOVE 0.5.0 (Salted Nuts).
+
+INIT love.filesystem [PhysFS]
+INIT love.graphics [OpenGL/DevIL/FreeType]
+INIT love.audio [SDL_mixer]
+INIT love.timer [SDL]
+INIT love.mouse [SDL]
+INIT love.keyboard [SDL]
+INIT love.physics [Box2D]
+INIT love.lib [LuaSocket] 
+INIT love.joystick [SDL]
+INIT love.system [Generic]
+Configuration (Line 4): Unrecognized command: ""
+Configuration (Line 5): Unrecognized command: "# Display resolution"
+Error reading image font 'big-robot-font.png': Character '´' is out of range.Error reading image font 'big-robot-font.png': Character 'ü' is out of range.Error reading image font 'big-robot-font.png': Character 'ä' is out of range.Error reading image font 'big-robot-font.png': Character 'Ä' is out of range.Error reading image font 'big-robot-font.png': Character 'Ö' is out of range.Error reading image font 'big-robot-font.png': Character 'ö' is out of range.Error reading image font 'big-robot-font.png': Character 'Ü' is out of range.Error reading image font 'big-robot-font.png': Character 'ß' is out of range.Error reading image font 'small-robot-font.png': Character '´' is out of range.Error reading image font 'small-robot-font.png': Character 'ü' is out of range.Error reading image font 'small-robot-font.png': Character 'ä' is out of range.Error reading image font 'small-robot-font.png': Character 'Ä' is out of range.Error reading image font 'small-robot-font.png': Character 'Ö' is out of range.Error reading image font 'small-robot-font.png': Character 'ö' is out of range.Error reading image font 'small-robot-font.png': Character 'Ü' is out of range.Error reading image font 'small-robot-font.png': Character 'ß' is out of range.QUIT love.system [Generic]
+QUIT love.joystick [SDL]
+QUIT love.lib [LuaSocket] 
+QUIT love.physics [Box2D]
+QUIT love.keyboard [SDL]
+QUIT love.mouse [SDL]
+QUIT love.timer [SDL]
+QUIT love.audio [SDL_mixer]
+QUIT love.graphics [OpenGL/DevIL/FreeType]
+QUIT love.filesystem [PhysFS]
