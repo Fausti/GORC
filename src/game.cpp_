@@ -1,12 +1,11 @@
+#pragma comment(lib, "SDL.lib")
+
 #include <stdio.h>
 #include <stdlib.h>
 
 #include <lua.h>
 #include <lauxlib.h>
 #include <lualib.h>
-
-#include <SDL/SDL.h>
-#include <SDL/SDL_ttf.h>
 
 #include "game.h"
 
@@ -105,5 +104,27 @@ void cleanup()
 
 	TTF_Quit();
 	SDL_Quit();
+}
+
+Uint32 game_timer (Uint32 interval, void *param)
+{
+	static int intervals = 0;
+
+	if (cycle_limit)
+	{
+		intervals++;
+
+		if (intervals >= 100 / cycle_limit)
+		{
+			cycle_next = TRUE;
+			intervals = 0;
+		}
+	}
+	else
+	{
+		intervals = 0;
+	}
+
+	return intervals;
 }
 
